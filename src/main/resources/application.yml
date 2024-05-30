@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: rabbitmq-json-message
+
+rabbitmq:
+  host: localhost
+  port: 5672 # as docker host port mapping
+  username: guest
+  password: guest
+
+  exchange:
+    name: pw_exchange
+  queue:
+    json:
+      name: pw_json
+  routing:
+    json:
+      key: pw_routing_json_key
